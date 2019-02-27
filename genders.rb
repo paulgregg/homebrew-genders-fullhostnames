@@ -15,7 +15,7 @@ class Genders < Formula
   end
 
   def install
-    system "./configure", "--prefix=#{prefix}", " --with-java-extensions=no", "--with-non-shortened-hostnames"
+    system "./configure", "--prefix=#{prefix}", "--with-java-extensions=no", "--with-non-shortened-hostnames"
     system "make", "install"
   end
 end
